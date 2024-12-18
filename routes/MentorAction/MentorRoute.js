@@ -16,7 +16,7 @@ router.post("/add", async (req, res) => {
 //! not in use
 router.get("/", async (req, res) => {
   try {
-    const allMentors = await Mentor.find();
+    const allMentors = await Mentor.find().sort({ index: 1 });
     res.json(allMentors);
   } catch (error) {
     res.status(500).json({ message: error.message });

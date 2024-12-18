@@ -87,4 +87,9 @@ app.use("/certificate/", certificate);
 // // Create and deploy your first functions
 // // https://firebase.google.com/docs/functions/get-started
 //
-exports.app = functions.https.onRequest(app);
+exports.app = functions.https.onRequest(
+  {
+    region: "asia-south",
+  },
+  app
+);

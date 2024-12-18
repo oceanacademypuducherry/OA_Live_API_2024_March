@@ -16,7 +16,7 @@ router.get("/batch/filter", async (req, res) => {
 // Get All Course
 router.get("/", async (req, res) => {
   try {
-    const allCourse = await Course.find();
+    const allCourse = await Course.find().sort({ index: 1 });
     res.status(200).json(allCourse);
   } catch (error) {
     res.status(500).json({ message: error.message });

@@ -4,10 +4,10 @@ const express = require("express");
 const cors = require("cors");
 // const fileUpload = require("express-fileupload");
 const mongoConnect = require("./DatabaseConnection");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
 const bodyParser = require("body-parser");
-const axios = require("axios");
+// const axios = require("axios");
 const compilerApi = require("./routes/CompilerApi");
 const payment = require("./routes/payment");
 
@@ -87,9 +87,17 @@ app.use("/certificate/", certificate);
 // // Create and deploy your first functions
 // // https://firebase.google.com/docs/functions/get-started
 //
-exports.app = functions.https.onRequest(
-  {
-    region: "asia-south",
-  },
-  app
+
+// Optimize Firebase Function Initialization
+let cachedServer = null;
+
+module.exports.app = functions.https.onRequest(
+  { region: "asia-south1" },
+  (req, res) => {
+    if (!cachedServer) {
+      console.log("Initializing Express server...");
+      cachedServer = app;
+    }
+    return cachedServer(req, res);
+  }
 );

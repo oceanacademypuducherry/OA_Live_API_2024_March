@@ -7,7 +7,10 @@ const DownloadedCourseUser = require("../../model/DownloadedOfflineCourse");
 //  get all course
 router.get("/", async (req, res) => {
   try {
-    const allOfflineCourse = await OfflineCourse.find().sort({ index: 1 });
+    const allOfflineCourse = await OfflineCourse.find(
+      {},
+      { syllabusLink: 0 }
+    ).sort({ index: 1 });
     res.status(200).json(allOfflineCourse);
   } catch (error) {
     res.status(500).json({ message: error.message });

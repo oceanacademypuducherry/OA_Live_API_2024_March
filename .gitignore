@@ -1,2 +1,3 @@
 node_modules/
-/utils/firebase_secret.json
+/.env
+

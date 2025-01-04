@@ -1,5 +1,7 @@
 const functions = require("firebase-functions");
 
+require("dotenv").config();
+// console.log(process.env.FIREBASE);
 const express = require("express");
 const cors = require("cors");
 // const fileUpload = require("express-fileupload");

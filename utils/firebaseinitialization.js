@@ -1,9 +1,9 @@
 const admin = require("firebase-admin");
-
-const secret = require("./firebase_secret.json");
-
+require("dotenv").config();
+// const secret = require("./firebase_secret.json");
+// console.log(process.env.FIREBASE_SECRET);
 admin.initializeApp({
-  credential: admin.credential.cert(secret),
+  credential: admin.credential.cert(JSON.parse(process.env.FIREBASE)),
   storageBucket: "oceanlivereact.appspot.com",
 });
 

@@ -1,0 +1,84 @@
+[debug] [2025-01-04T10:38:43.446Z] ----------------------------------------------------------------------
+[debug] [2025-01-04T10:38:43.449Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL 4\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-01-04T10:38:43.449Z] CLI Version:   13.29.1
+[debug] [2025-01-04T10:38:43.450Z] Platform:      win32
+[debug] [2025-01-04T10:38:43.450Z] Node Version:  v20.10.0
+[debug] [2025-01-04T10:38:43.450Z] Time:          Sat Jan 04 2025 16:08:43 GMT+0530 (India Standard Time)
+[debug] [2025-01-04T10:38:43.450Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-04T10:38:43.585Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-04T10:38:43.585Z] > authorizing via signed-in user (oceanacademypuducherry@gmail.com)
+[info] i  emulators: Starting emulators: functions, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, extensions"}}
+[debug] [2025-01-04T10:38:43.591Z] Checked if tokens are valid: false, expires at: 1735987424452
+[debug] [2025-01-04T10:38:43.591Z] Checked if tokens are valid: false, expires at: 1735987424452
+[debug] [2025-01-04T10:38:43.591Z] > refreshing access token with scopes: []
+[debug] [2025-01-04T10:38:43.593Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-01-04T10:38:43.593Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-04T10:38:43.728Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-01-04T10:38:43.728Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-04T10:38:43.740Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/oceanlivereact [none]
+[debug] [2025-01-04T10:38:45.152Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/oceanlivereact 200
+[debug] [2025-01-04T10:38:45.153Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/oceanlivereact {"projectNumber":"795685034829","projectId":"oceanlivereact","lifecycleState":"ACTIVE","name":"oceanlivereact","labels":{"firebase":"enabled"},"createTime":"2022-03-14T15:20:51.745Z"}
+[debug] [2025-01-04T10:38:45.181Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-04T10:38:45.181Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-01-04T10:38:45.192Z] [hub] writing locator at C:\Users\DELL4~1\AppData\Local\Temp\hub-oceanlivereact.json
+[debug] [2025-01-04T10:38:45.208Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-01-04T10:38:45.217Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-04T10:38:45.217Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-04T10:38:45.217Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-01-04T10:38:45.218Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-01-04T10:38:45.226Z] defaultcredentials: writing to file C:\Users\DELL 4\AppData\Roaming\firebase\oceanacademypuducherry_gmail_com_application_default_credentials.json
+[debug] [2025-01-04T10:38:45.232Z] Setting GAC to C:\Users\DELL 4\AppData\Roaming\firebase\oceanacademypuducherry_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\DELL 4\\AppData\\Roaming\\firebase\\oceanacademypuducherry_gmail_com_application_default_credentials.json"}}
+[debug] [2025-01-04T10:38:45.233Z] Checked if tokens are valid: true, expires at: 1735990722728
+[debug] [2025-01-04T10:38:45.233Z] Checked if tokens are valid: true, expires at: 1735990722728
+[debug] [2025-01-04T10:38:45.234Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/oceanlivereact/adminSdkConfig [none]
+[debug] [2025-01-04T10:38:46.300Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/oceanlivereact/adminSdkConfig 200
+[debug] [2025-01-04T10:38:46.300Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/oceanlivereact/adminSdkConfig {"projectId":"oceanlivereact","storageBucket":"oceanlivereact.appspot.com","locationId":"asia-northeast3"}
+[debug] [2025-01-04T10:38:46.345Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "D:\sangeetha\OA LIVE BACKEND\OA_Live_API_2024_March" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\sangeetha\\OA LIVE BACKEND\\OA_Live_API_2024_March\" for Cloud Functions..."}}
+[debug] [2025-01-04T10:38:46.355Z] Validating nodejs source
+[debug] [2025-01-04T10:38:48.281Z] > [functions] package.json contents: {
+  "name": "oa-live-api",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "dev": "npm run serve"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "firebase-functions": "^6.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^6.2.4",
+    "nodemailer": "^6.7.5",
+    "razorpay": "^2.8.1",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "firebase-admin": "^13.0.1",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2025-01-04T10:38:48.281Z] Building nodejs source
+[debug] [2025-01-04T10:38:48.282Z] Failed to find version of module node: reached end of search path D:\sangeetha\OA LIVE BACKEND\OA_Live_API_2024_March\node_modules
+[info] +  functions: Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-01-04T10:38:48.295Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-01-04T10:38:48.304Z] Found firebase-functions binary at 'D:\sangeetha\OA LIVE BACKEND\OA_Live_API_2024_March\node_modules\.bin\firebase-functions'
+[info] Serving at port 8460
+
